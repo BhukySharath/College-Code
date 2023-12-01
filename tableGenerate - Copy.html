@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuleGenerate</title>
+</head>
+<body>
+    <h2>Tabule Generation</h2>
+    <form action="#" id="forms">
+        Enter no of rows: <input type="text" id="rows"> <br><br>
+        Enter no of columns: <input type="text" id="col"> <br> <br>
+        <input type="button" value="Get Table Now" onclick="myfunction(rows.value,col.value)">
+    <center></form>
+    <script>
+        function myfunction(row,col){
+            let t=document.createElement("table");
+            if(rows==0 || rows==''){
+                rows=10;
+            }
+            if(col==0 || col==''){
+                col=10;
+            }
+            let list=[]
+            for(i=1;i<=row;i++){
+                let y=document.createElement("tr");
+                for(j=1;j<=col;j++){
+                    let x=document.createElement("td");
+                    x.innerText=i*j;
+                    x.style.border='2px solid black';
+                    x.style.margin='2px';
+                    x.style.padding='2px';
+                    y.appendChild(x);
+                   
+
+
+                }
+                t.appendChild(y);
+            }
+            let out=document.getElementById("forms");
+            t.style.border='4px solid black';
+            out.appendChild(t);
+        }
+
+
+    </script></center>
+</body>
+</html>

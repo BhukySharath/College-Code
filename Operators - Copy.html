@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <style>
+        form{
+            margin: 40wh 40wb;
+        }
+    </style>
+</head>
+<body>
+    <h2>Calculate here....</h2>
+    <form action="#" id="form">
+        <input type="text" id="x" name="x1"> <br> <br>
+        <input type="text" id="y" name="y1"> <br> <br>
+        <input type="button" onclick="add1(x1.value,y1.value)" value="+"> 
+        <input type="button" onclick="sub1(x1.value,y1.value)" value="-"> 
+        <input type="button" onclick="mul1(x1.value,y1.value)" value="*"> 
+        <input type="button" onclick="mod1(x1.value,y1.value)" value="%">  
+        <input type="button" onclick="divi1(x1.value,y1.value)" value="/"> <br><br>
+        <input type="text" id="outp">
+    </form>
+    <script>
+
+        var ou = document.getElementById("outp");
+
+        function add1(a,b){
+            a=parseInt(a);
+            b=parseInt(b);
+            ou.value = a+b;
+        }
+        function sub1(a,b){
+            ou.value = a-b;
+        }
+        function mul1(a,b){
+            ou.value = a*b;
+        }
+        function divi1(a,b){
+            ou.value = a/b;
+        }
+        function mod(a,b){
+            ou.value = a%b;
+        }
+    </script>
+</body>
+</html>

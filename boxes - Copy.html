@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        /* body{
+            background-color: burlywood;
+
+        } */
+        .container{
+            margin:50vh 50vw;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <input type="button" value="Prompt" name="b1" id="b1" onclick="promp('what is your name')">&nbsp;
+        <input type="button" value="confirm" name="b2" id="b2" onclick="confir('Are you sure want to go ahead')">&nbsp
+        <input type="button" value="alert" name="b3" id="b3" onclick="aler('Has app may change your device')">&nbsp;
+
+    </div>
+    <script>
+        function promp(s){
+            console.log(prompt(s));
+        }
+        function confir(s){
+            console.log(confirm(s));
+        }
+        function aler(s){
+            console.log(alert(s));
+        }
+
+
+    </script>
+</body>
+</html>

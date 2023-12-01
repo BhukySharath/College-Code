@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 25vw;
+            display: grid;
+            grid-template-areas:
+            'space space space space'
+            'nc n nDEL ndiv'
+            'n7 n8 n9 nx'
+            'n4 n5 n6 n-'
+            'n1 n2 n3 nplus'
+            'n00 n0 ndot nequal';    
+            background-color:rgb(2, 9, 13);   
+            border: 2px solid white;
+            border-radius: 5px;
+              
+        }
+        input{
+            margin: 2px ;
+            padding:2px ;
+            cursor: pointer;
+           
+        }
+    </style>
+</head>
+<body>   
+                
+                <center><div class="container"> 
+                    <input type="text" style="grid-area: space; text-align: right;" id="space" space.value="" >   
+                    <input type="button" value="C" style="grid-area: nc;" onclick='space.value=""'>
+                    <input type="button" value="**" style="grid-area: n;" onclick='space.value+="**"'>
+                    <input type="button" value="DEL" style="grid-area: nDEL;" onclick="space.value=space.value.toString().slice(0,space.value.length-1)">
+                    <input type="button" value="/" style="grid-area: ndiv;" onclick='space.value+="/"'>
+                    <input type="button" value="7"style="grid-area: n7;" onclick="space.value+=7">
+                    <input type="button" value="8" style="grid-area:  n8;" onclick="space.value+=8">
+                    <input type="button" value="9" style="grid-area: n9;" onclick="space.value+=9">
+                    <input type="button" value="x" style="grid-area: nx;" onclick="space.value+='*'">
+                    <input type="button" value="4" style="grid-area: n4;" onclick="space.value+=4">
+                    <input type="button" value="5" style="grid-area: n5;" onclick="space.value+=5">
+                    <input type="button" value="6" style="grid-area: n6;" onclick="space.value+=6">
+                    <input type="button" value="-" style="grid-area: n-;" onclick="space.value+='-'">
+                    <input type="button" value="1" style="grid-area: n1;" onclick="space.value+=1">
+                    <input type="button" value="2" style="grid-area: n2;" onclick="space.value+=2">
+                    <input type="button" value="3" style="grid-area: n3;" onclick="space.value+=3">
+                    <input type="button" value="+" style="grid-area: nplus;" onclick="space.value+='+'">
+                    <input type="button" value="00" style="grid-area: n00;" onclick="space.value+='00'">
+                    <input type="button" value="0" style="grid-area: n0;" onclick="space.value+=0">
+                    <input type="button" value="." style="grid-area: ndot;" onclick="space.value+='.'">
+                    <input type="button" value="=" style="grid-area: nequal; " onclick="space.value=eval(space.value)">
+                </div></center>
+</body>
+</html>

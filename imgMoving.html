@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImgMoving</title>
+</head>
+<body>
+    <form action="#">
+        Enter Y: <input type="text" name="iny" id="iny">
+        Enter X: <input type="text" name="inx" id="inx">
+        <input type="button" value="MOVE" onclick="movefun(inx.value,iny.value)">
+    </form>
+    <img src="car.jpeg" alt="some" id="imgg">
+    <script>
+        function movefun(x,y){
+            let i=document.getElementById("imgg");
+            console.log("the x is:",x,"the y is:",y);
+            i.style.position="absolute";
+            console.log(i);
+            i.style.left=x+'px';
+            i.style.top=y+'px';
+            
+        }
+
+    </script>
+</body>
+</html>

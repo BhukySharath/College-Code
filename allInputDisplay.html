@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allinputDisplay</title>
+</head>
+<body>
+    <h1>ALL INPUT FORMS</h1>
+    <form action="#" >
+        Number:<input type="number" id="number_id" class="form"> <br><br>
+        Text:<input type="text" id="text_id" class="form"> <br><br>
+        Color:<input type="color" name="col" id="col_id" class="form"> <br><br>
+        Date:<input type="date" name="date" id="date_id" class="form"> <br><br>
+        DateTime:<input type="datetime" name="datetime0" id="datetime_id" class="form"> <br><br>
+        Date-time-local:<input type="datetime-local" name="datetimelocal" id="datatimelocal_id" class="form"> <br><br>
+        Email:<input type="email" name="email" id="emai_id" class="form"> <br><br>
+        File: <input type="file" name="file" id="file_id" class="form"> <br><br>
+        Hidden: <input type="hidden" name="hidden" id="hidden_id" class="form"> <br><br>
+        Month: <input type="month" name="month" id="month_id" class="form"> <br><br>
+        password:<input type="password" name="password" id="password_id" class="form"> <br><br>
+        Radio:<input type="radio" name="radio" id="radio_id" class="form"> <br><br>
+        Range:<input type="range" name="range" id="range_id" class="form"> <br><br>
+        search:<input type="search" name="search" id="search_id" class="form"><br><br>
+        Submit:<input type="submit" value="submit" class="form"><br><br>
+        Tel:<input type="tel" name="tel" id="tel_id" class="form"><br><br>
+        <input type="button" id="button_id" onclick = "myfun()" value="Click Me" class="form">
+    </form>
+    <script>
+        function myfun(){
+            console.log(document.getElementsByClassName("form"));
+        }
+
+
+    </script>
+</body>
+</html>

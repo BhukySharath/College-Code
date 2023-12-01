@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evenOrOdd</title>
+    <style>
+        body{
+                margin:40vh 30vw; 
+        }
+
+    </style>
+</head>
+<body>
+    <h2>check Even or Odd</h2>
+    <form action="#" id="form">
+        <input type="text" name="val1" id="val1"> <br><br>
+        <input type="button" value="check" onclick="checkEvenOrOdd()"> <br> <br>
+    </form>
+    <script>
+        var output=document.createElement("input");
+        output.type="text";
+        console.log(a.value);
+        function checkEvenOrOdd(){
+            document.getElementById("form").appendChild(output);
+            if(a.value%2==0){
+                output.value="even";
+            }
+            else{
+                output.value="odd"
+            }
+        }
+    </script>
+</body>
+</html>
